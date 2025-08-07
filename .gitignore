@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+.env/
+
+# Logs and runtime files
+*.log
+*.pid
+*.out
+*.tmp
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+
+# Dependency and cache
+*.egg-info/
+*.egg
+.cache/
+
+# Build files
+build/
+dist/
+*.egg-info/
+__init__.py
+
+# Data and sensitive information
+data/
+.env
+
+# Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
