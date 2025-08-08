@@ -1,27 +1,14 @@
-from mcp.server.fastmcp import FastMCP
+# MCP_PROJECT/server.py
+
 from dotenv import load_dotenv
+from utils.initiate_mcp import mcp
+from tools.document_retrieval import document_retrieval_tool
+from tools.web_search import web_search_tool
 
-load_dotenv("../.env")
+load_dotenv()
 
-# Create an MCP server
-mcp = FastMCP(
-    name="Calculator",
-    host="0.0.0.0",  # only used for SSE transport (localhost)
-    port=8050,  # only used for SSE transport (set this to any port)
-    stateless_http=True,
-)
-
-
-# Add a simple calculator tool
-@mcp.tool()
-def add(a: int, b: int) -> int:
-    """Add two numbers together"""
-    return a + b
-
-
-# Run the server
 if __name__ == "__main__":
-    transport = "sse"
+    transport = "stdio"
     if transport == "stdio":
         print("Running server with stdio transport")
         mcp.run(transport="stdio")

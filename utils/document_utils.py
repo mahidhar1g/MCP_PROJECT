@@ -1,3 +1,5 @@
+# MCP_PROJECT/utils/document_utils.py
+
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os

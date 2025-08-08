@@ -1,15 +1,12 @@
+# MCP_PROJECT/tools/web_search.py
+
 from langchain.agents import tool
 from langchain_community.tools import DuckDuckGoSearchRun
+from utils.initiate_mcp import mcp
 
-@tool
-def web_search_tool(query):
+@mcp.tool()
+def web_search_tool(query: str) -> str:
     """
-    Perform a web search using DuckDuckGo and return relevant information.
-    
-    When to use this tool:
-        - If the document_retrieval_tool does not find relevant information.
-        - Use this tool only when the needed information is missing from the document retrieval tool.
+    Perform a web search using DuckDuckGo and return relevant info.
     """
-    
-    search = DuckDuckGoSearchRun()
-    return search.run(query)
+    return DuckDuckGoSearchRun().run(query)

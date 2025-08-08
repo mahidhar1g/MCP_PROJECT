@@ -1,3 +1,5 @@
+# MCP_PROJECT/vector_store/pinecone_db.py
+
 from pinecone import Pinecone, ServerlessSpec
 from pinecone.exceptions import PineconeException
 import os

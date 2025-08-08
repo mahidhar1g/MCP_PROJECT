@@ -1,3 +1,5 @@
+# MCP_PROJECT/utils/embeddings.py
+
 import os
 from langchain_openai.embeddings import OpenAIEmbeddings
 from dotenv import load_dotenv
