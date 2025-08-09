@@ -8,7 +8,7 @@ from tools.web_search import web_search_tool
 load_dotenv()
 
 if __name__ == "__main__":
-    transport = "stdio"
+    transport = "sse"
     if transport == "stdio":
         print("Running server with stdio transport")
         mcp.run(transport="stdio")
