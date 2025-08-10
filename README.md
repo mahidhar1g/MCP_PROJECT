@@ -15,4 +15,4 @@ A **universal standard** for connecting AI agents (LLMs) to external tools and d
 
 ## 🏛 Architecture
 
-![MCP Diagram](https://raw.githubusercontent.com/mahidhar1g/MCP_PROJECT/main/documents/Images/FlowDiagram.png)
+
